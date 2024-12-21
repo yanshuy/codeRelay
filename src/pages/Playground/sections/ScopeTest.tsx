@@ -8,10 +8,10 @@ export default function ScopeTest() {
         width: 200px;
         border: 2px solid rebeccapurple;
         animation: someComplexAnimation 3s infinite;
+        /* see index.css for keyframes */
       }
     }
   `;
-
   return (
     <>
       <section className="mt-32">
