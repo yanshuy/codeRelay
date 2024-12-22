@@ -1,6 +1,6 @@
-const css = String.raw;
 
 export default function ScopeTest() {
+  const css = String.raw
   const scopedStyle = css`
     @scope {
       .local-div {
@@ -11,12 +11,14 @@ export default function ScopeTest() {
         /* see index.css for keyframes */
       }
     }
-  `;
+    `;
+
+    
   return (
     <>
-      <section className="mt-32">
+      <section className="mt-32 @container">
         <style>{scopedStyle}</style>
-        <div className="local-div mx-auto">ScopeTest text 1</div>
+        <div className="local-div mx-auto auto-rows-[300px] @">ScopeTest text 1</div>
       </section>
       <section className="mt-32">
         <div className="local-div mx-auto">
